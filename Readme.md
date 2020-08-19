@@ -1,4 +1,4 @@
-# ArmA3 Squad.XML Management
+# ArmA 3 Squad.XML Management
 
 I made this small project, that you can host your own Squad.XML for ArmA 3.
 Just put this on your webserver and you can edit the squad.xml
