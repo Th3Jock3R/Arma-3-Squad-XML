@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Passwortgeschützter Bereich"
+AuthUserFile /opt/squad/www/.htpasswd
+Require valid-user
