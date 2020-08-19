@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE squad SYSTEM "squad.dtd">
+<squad nick="Example">
+    <name>Exampleclan</name>
+    <email>example@example.com</email>
+    <web>https://example.com</web>
+    <picture>logo_v1.paa</picture>
+    <title>Example</title>
+    
+    
+    
+    
+<member id="76561197984535433" nick="Th3_Jock3R"><name>N/A</name><email>N/A</email><icq>N/A</icq><remark>Admin</remark></member></squad>
