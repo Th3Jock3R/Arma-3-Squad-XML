@@ -93,7 +93,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php
                   foreach (scandir("../") as $item) {
                     if (preg_match('/(.*)\.paa$/', $item, $matches)) {
-                      echo sprintf('<option value="%s">%s</option>', $item, $matches[1]);
+                      if ($item === $xml->picture) {
+                        echo sprintf('<option value="%s" selected>%s</option>', $item, $matches[1]);
+                      } else {
+                        echo sprintf('<option value="%s">%s</option>', $item, $matches[1]);
+                      }
                     }
                   }
                 ?>
