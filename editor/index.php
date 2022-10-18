@@ -15,15 +15,14 @@ $RANKS = [
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $xmlold = $xml = simplexml_load_file(Config::$squad_xml);
 
-  $xml->name  = substr(trim($_POST['name']),  0, 64);
-  $xml->email = substr(trim($_POST['email']), 0, 64);
-  $xml->web   = substr(trim($_POST['url']),   0, 64);
-  $xml->title = substr(trim($_POST['title']), 0, 64);
+  $xml->name    = substr(trim($_POST['name']),  0, 64);
+  $xml->email   = substr(trim($_POST['email']), 0, 64);
+  $xml->web     = substr(trim($_POST['url']),   0, 64);
+  $xml->title   = substr(trim($_POST['title']), 0, 64);
+  $xml->picture = substr(trim($_POST['picture']), 0, 64);
   $xml->attributes()->nick = substr(trim($_POST['title']), 0, 64);
 
   unset($xml->member);
-
-
 
   $members = [];
   foreach ($_POST['member'] as $item) {
